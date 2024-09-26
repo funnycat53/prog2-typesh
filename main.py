@@ -1,6 +1,7 @@
 from cilveks import Cilveks, Sieviete
 import tkinter as tk
 from tkinter import ttk
+from tkinter.messagebox import showinfo
 
 root = tk.Tk()
 root.title("Cilvēku ražotne")
@@ -26,6 +27,9 @@ dzimums_label.grid(column=0, row=1, sticky='E', **options)
 vecums_label = ttk.Label(frame, text='Vecums')
 vecums_label.grid(column=0, row=2, sticky='E', **options)
 
+# dzimsanas diena label
+dzDiena_label = ttk.Label(frame, text='Dzimšanas diena')
+dzDiena_label.grid(column=0, row=3, sticky='E', **options)
 
 # vārds entry
 vards = tk.StringVar()
@@ -45,6 +49,12 @@ vecums_entry = ttk.Entry(frame, textvariable=vecums)
 vecums_entry.grid(column=1, row=2, **options)
 vecums_entry.focus()
 
+# dzimsanas diena entry
+dzDiena = tk.StringVar()
+dzDiena_entry = ttk.Entry(frame, textvariable=dzDiena)
+dzDiena_entry.grid(column=1, row=3, **options)
+dzDiena_entry.focus()
+
 
 def razot_button_clicked():
     cilvkea_vards = vards.get()
@@ -60,7 +70,7 @@ razot_button.configure(command=razot_button_clicked)
 
 # result label
 result_label = ttk.Label(frame)
-result_label.grid(row=3, columnspan=3, **options)
+result_label.grid(row=4, columnspan=3, **options)
 
 # add padding to the frame and show it
 frame.grid(padx=10, pady=10)
