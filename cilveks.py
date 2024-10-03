@@ -56,8 +56,8 @@ class Sieviete(Cilveks):
         print("Mana matu krāsa ir", self.matu_krasa)
 
 
-# pirmais = Sieviete("Anna", "blonda", 18)
-# pirmais.mainit_dzimumu()
+pirmais = Sieviete("Anna", "blonda", 18)
+pirmais.mainit_dzimumu()
 
 # otrais = Cilveks("Janis", "v")
 # otrais.info()
