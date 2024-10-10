@@ -1,4 +1,4 @@
-from cilveks import Cilveks, Sieviete
+from oop.cilveks import Cilveks, Sieviete
 import tkinter as tk
 from tkinter import ttk, END
 from tkinter.messagebox import showinfo

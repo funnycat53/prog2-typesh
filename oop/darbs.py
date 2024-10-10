@@ -1,4 +1,4 @@
-from cilveks import Sieviete, Cilveks
+from oop.cilveks import Sieviete, Cilveks
 
 cilveku_saraksts = []
 
